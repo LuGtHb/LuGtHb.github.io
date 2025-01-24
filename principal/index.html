@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Registro</title>
+    <!-- Fuente externa desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!--introduzco el css que contiene el estilo de la web-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+     <!-- Cabecera -->
+     <header>
+        <!--Incorporo un nombre ficticio de la empresa rodeado por dos logotipos. Me genera más "fiabilidad" así a que aparezca solo un logo sin nada alrededor.-->
+<img src="images/logo.jpg" alt="Logotipo">
+PSManagement S.L.
+<img src="images/logo.jpg" alt="Logotipo">
+<h1>Formulario a completar</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/Ejercicio%204/principal/index.html">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="http://127.0.0.1:5500/Ejercicio%204/productos/productos.html">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <form action="#" method="post">
+                <label for="email">Nombre (Correo electrónico)</label>
+                <input type="email" id="email" name="email" placeholder="Dirección de correo electrónico" required autofocus>
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="phone">Teléfono móvil</label>
+                <input type="tel" id="phone" name="phone" placeholder="Número de teléfono" pattern="[0-9]{10}" required>
+
+                <label for="dob">Fecha de nacimiento</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="remember">
+                    <input type="checkbox" id="remember" name="remember">
+                    Recordar contraseña
+                </label>
+
+                <button type="submit">Dar de alta
+                    <span class="tooltip">Entra y descubre</span>
+                </button>
+            </form>
+        </div>
+        
+        <div class="sidebar">
+            <div class="lorem">
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at turpis vitae orci dictum fermentum. Nunc ut metus mauris. Curabitur suscipit eu erat nec fermentum. Aenean auctor neque in eros laoreet, ac gravida nulla vulputate. Nulla facilisi. Vivamus vel magna sit amet eros lacinia fermentum. Sed sit amet urna eget sapien pharetra scelerisque. Aliquam erat volutpat. Aenean in justo ac nisi euismod congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at turpis vitae orci dictum fermentum. Nunc ut metus mauris. Curabitur suscipit eu erat nec fermentum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at turpis vitae orci dictum fermentum. Nunc ut metus mauris. Curabitur suscipit eu erat nec fermentum. Aenean auctor neque in eros laoreet, ac gravida nulla vulputate. Nulla facilisi. Vivamus vel magna sit amet eros lacinia fermentum. Sed sit amet urna eget sapien pharetra scelerisque. Aliquam erat volutpat. Aenean in justo ac nisi euismod congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at turpis vitae orci dictum fermentum.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Lucía Salgado Fernández
+    </footer>
+
+</body>
+</html>
+
+
