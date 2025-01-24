@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+header img {
+    height: 50px;
+}
+/* Menú de navegación */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+nav ul li a:hover {
+    background-color: #0073e6;
+    border-radius: 4px;
+}
+.container {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start; /* Alineamos el contenido hacia la izquierda */
+    padding: 20px;
+    background-color: #fff;
+}
+.content {
+    width: 70%; /* Ajustamos el tamaño de la columna del formulario */
+    margin-left: 0; /* Sin margen izquierdo, estará completamente a la izquierda */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.sidebar {
+    width: 25%; /* La columna lateral será más pequeña */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+input[type="date"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+input[type="checkbox"] {
+    margin-bottom: 15px;
+}
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #005bb5;
+}
+footer {
+    text-align: right;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+.lorem {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+/* Estilos para el Tooltip */
+button {
+    position: relative;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* El Tooltip inicialmente está oculto */
+.tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%; /* Lo coloca encima del botón */
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #4CAF50, #005bb5); /* Gradiente */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+/* Mostrar el Tooltip cuando el ratón pase por encima del botón */
+button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+  /* Estilo para el efecto Polaroid */
+  .product {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+}
+.product img {
+    width: 100%;
+    height: auto;
+    border: 10px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease-in-out;
+}
+.product:hover img {
+    transform: rotate(0deg) scale(1.05);
+}
+.product h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.product p {
+    font-size: 14px;
+    color: #777;
+}
+.product a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+.product a:hover {
+    text-decoration: underline;
+}
